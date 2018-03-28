@@ -38,5 +38,11 @@ public class Enemies : MonoBehaviour {
         target = Waypoints.points[wavepointIndex];
 
     }
-		
+
+	void OnCollisionEnter(Collision col){
+		if(col.gameObject.tag == "tower"){
+			Debug.Log("Enemy detect");
+			Tower.idle = false;
+		}
+	}
 }
