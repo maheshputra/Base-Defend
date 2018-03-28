@@ -30,3 +30,36 @@ D:\Unity Tutorial\Base Defend\Temp\bin\Debug\UnityEngine.HoloLens.xml
 D:\Unity Tutorial\Base Defend\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\Unity Tutorial\Base Defend\obj\Debug\Assembly-CSharp.dll
 D:\Unity Tutorial\Base Defend\obj\Debug\Assembly-CSharp.pdb
+D:\Unity Tutorial\Base-Defend\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+D:\Unity Tutorial\Base-Defend\obj\Debug\Assembly-CSharp.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Facebook.Unity.Settings.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\nunit.framework.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEditor.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.Analytics.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.HoloLens.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.Networking.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.TestRunner.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.Timeline.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Mono.Cecil.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Unity.DataContract.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\ExCSS.Unity.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Unity.UNetWeaver.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Unity.CecilTools.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.xml
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEditor.xml
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.UI.xml
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.Networking.xml
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.TestRunner.xml
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\nunit.framework.xml
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.Timeline.xml
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.Analytics.xml
+D:\Unity Tutorial\Base-Defend\Temp\bin\Debug\UnityEngine.HoloLens.xml
+D:\Unity Tutorial\Base-Defend\obj\Debug\Assembly-CSharp.pdb
