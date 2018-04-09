@@ -10,9 +10,9 @@ public class Tower : MonoBehaviour {
 	public float fireRate = 1f;
 	public float fireCountdown = 0;
 
-	[Header("Unity Setup Fields")]
-	public float rotX = -90f;
-	public float rotY = 0f;
+    [Header("Unity Setup Fields")]
+    public float rotX;
+	public float rotY;
 
 	public string enemyTag = "enemy";
 

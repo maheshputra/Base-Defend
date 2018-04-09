@@ -127,7 +127,7 @@
      <None Include="Assets\ProCore\Polybrush\Font\Apache License.txt" />
      <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendModulate_SfSrc.shader" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/Base Defend/Base-Defend/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>D:/Base-Defend/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
