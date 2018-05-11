@@ -35,14 +35,14 @@ public class Tower : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(target == null){
-			Head.Rotate (0,0,turnSpeed * Time.deltaTime);
+			Head.Rotate (0,turnSpeed * Time.deltaTime,0);
 			return;
 		}
 
 		Vector3 dir = target.position - transform.position;
 		Quaternion lookRotation = Quaternion.LookRotation (dir);
 		Vector3 rotation = Quaternion.Lerp(Head.rotation, lookRotation, turnSpeed * Time.deltaTime).eulerAngles;
-		Head.rotation = Quaternion.Euler (rotX,rotY,rotation.y);
+		Head.rotation = Quaternion.Euler (0,rotation.y,0);
 
 		if(fireCountdown <= 0f){
 			Shoot ();

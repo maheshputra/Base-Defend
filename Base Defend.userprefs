@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Placement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BuildManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Tower.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Tower.cs" Line="40" Column="4" />
       <File FileName="Assets\Scripts\Bullet.cs" Line="1" Column="1" />
       <File FileName="..\Game Design\Assets\Asset\Script\DestroyObj.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemies.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Placement.cs" Line="25" Column="106" />
-      <File FileName="Assets\Scripts\BuildManager.cs" Line="23" Column="2" />
+      <File FileName="Assets\Scripts\Placement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BuildManager.cs" Line="27" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
