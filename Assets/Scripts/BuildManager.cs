@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BuildManager : MonoBehaviour {
 	public static BuildManager instance;
@@ -13,15 +11,17 @@ public class BuildManager : MonoBehaviour {
 		instance = this;
 	}
 
-	public GameObject standartTurretPrefab;
-
-	void Start(){
-		turretToBuild = standartTurretPrefab;
-	}
+	public GameObject Turret1;
+    public GameObject Turret2;
+    public GameObject Turret3;
 
 	private GameObject turretToBuild;
 
 	public GameObject GetTurretToBuild(){
 		return turretToBuild;
 	}
+
+    public void SetTurretToBuild(GameObject Turret) {
+        turretToBuild = Turret;
+    }
 }

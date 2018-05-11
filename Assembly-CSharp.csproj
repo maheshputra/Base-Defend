@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\Tower.cs" />
     <Compile Include="Assets\Scripts\Waypoints.cs" />
+    <Compile Include="Assets\TurretInfo.cs" />
     <None Include="Assets\ProCore\Polybrush\Shader\z_TriPlanarBlend_SfSrc.shader" />
     <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendMobile.shader" />
     <None Include="Assets\ProCore\Polybrush\README.txt" />
