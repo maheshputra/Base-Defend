@@ -6,6 +6,9 @@ public class CameraController : MonoBehaviour {
     public float minX = -10;
     public float maxX = 10;
 
+    public float minY = 9;
+    public float maxY = 24;
+
     public float minZ = -10;
     public float maxZ = 10;
 
@@ -35,9 +38,14 @@ public class CameraController : MonoBehaviour {
             transform.Translate(Vector3.left * panSpeed * Time.deltaTime, Space.World);
         }
 
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+
         Vector3 pos = transform.position;
 
+        pos.y -= scroll * 1000 * 1 * Time.deltaTime;
+
         pos.x= Mathf.Clamp(pos.x, minX, maxX);
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
         pos.z = Mathf.Clamp(pos.z, minZ, maxZ);
 
         transform.position = pos;
