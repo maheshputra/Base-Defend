@@ -3,11 +3,13 @@ using UnityEngine.EventSystems;
 
 public class Placement : MonoBehaviour {
 	public Color hoverColor;
-	private GameObject turret;
-	public Vector3 OffsetPositionTurret1;
+    public Vector3 OffsetPositionTurret1;
     public Vector3 OffsetPositionTurret2;
     public Vector3 OffsetPositionTurret3;
 
+    [Header("Optional")]
+    public GameObject turret;
+	
     private Renderer rend;
 	private Color startColor;
 
@@ -20,13 +22,27 @@ public class Placement : MonoBehaviour {
         buildManager = BuildManager.instance;
 	}
 
-	void OnMouseDown(){
+    public Vector3 GetBuildPosition1() {
+            return transform.position + OffsetPositionTurret1;
+    }
+
+    public Vector3 GetBuildPosition2()
+    {
+        return transform.position + OffsetPositionTurret2;
+    }
+
+    public Vector3 GetBuildPosition3()
+    {
+        return transform.position + OffsetPositionTurret3;
+    }
+
+    void OnMouseDown(){
         if (EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }
 
-        if (buildManager.GetTurretToBuild() == null) {
+        if (!buildManager.CanBuild) {
             return;
         }
 
@@ -35,30 +51,16 @@ public class Placement : MonoBehaviour {
 			return;
 		}
 
-		GameObject turretToBuild = buildManager.GetTurretToBuild();
-        if (buildManager.GetTurretToBuild() == buildManager.Turret1)
-        {
-            turret = (GameObject)Instantiate(turretToBuild, transform.position + OffsetPositionTurret1, transform.rotation);
-        }
-
-        if (buildManager.GetTurretToBuild() == buildManager.Turret2)
-        {
-            turret = (GameObject)Instantiate(turretToBuild, transform.position + OffsetPositionTurret2, transform.rotation);
-        }
-
-        if (buildManager.GetTurretToBuild() == buildManager.Turret3)
-        {
-            turret = (GameObject)Instantiate(turretToBuild, transform.position + OffsetPositionTurret3, transform.rotation);
-        }
+        buildManager.BuildTurretOn(this);
     }
 
-	// Update is called once per frame
+	
 	void OnMouseEnter(){
         if (EventSystem.current.IsPointerOverGameObject()) {
             return;
         }
 
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
         {
             return;
         }

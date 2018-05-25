@@ -1308,6 +1308,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &37456597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2785,6 +2786,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &73800588
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8016,6 +8018,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &210101558
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8598,6 +8601,7 @@ GameObject:
   - component: {fileID: 231670509}
   - component: {fileID: 231670508}
   - component: {fileID: 231670510}
+  - component: {fileID: 231670511}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -8646,6 +8650,18 @@ MonoBehaviour:
   Turret1: {fileID: 1519166284846512, guid: 7d8186d74a3a0b1488aa863d0b83dd22, type: 2}
   Turret2: {fileID: 1698235424168836, guid: 8bad61a2c0ac6fd41b2c5a7c17c3e2c6, type: 2}
   Turret3: {fileID: 1809053234376014, guid: 23132e88f789d324daa5185b531d1708, type: 2}
+--- !u!114 &231670511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 231670507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5d6179aeef10f4b9a32b4dc1b65e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 500
 --- !u!1 &233825818
 GameObject:
   m_ObjectHideFlags: 0
@@ -9575,6 +9591,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &243391606
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15752,7 +15769,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1236357023}
-        m_MethodName: PurcaseTurret1
+        m_MethodName: SelectTurret1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18326,6 +18343,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &470464347
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19048,7 +19066,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1236357023}
-        m_MethodName: PurcaseTurret2
+        m_MethodName: SelectTurret2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19125,7 +19143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1041, y: -129.79}
+  m_AnchoredPosition: {x: 973, y: -129.79}
   m_SizeDelta: {x: 263.85, y: 148.78}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &489967666
@@ -26790,6 +26808,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &683555346
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30413,6 +30432,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &783542578
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30514,6 +30534,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &783984013
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30837,6 +30858,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &785942125
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33758,6 +33780,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &863039790
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34347,6 +34370,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &877702110
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38728,6 +38752,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &980310285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42252,6 +42277,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1069458991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42874,7 +42900,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.1533019, g: 0.3321541, b: 0.6132076, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -46193,6 +46219,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1194022718
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47494,6 +47521,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1220399103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48464,6 +48492,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e614662b8b85fd542afccd3009bce535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turret1:
+    prefabs: {fileID: 1519166284846512, guid: 7d8186d74a3a0b1488aa863d0b83dd22, type: 2}
+    cost: 100
+  turret2:
+    prefabs: {fileID: 1698235424168836, guid: 8bad61a2c0ac6fd41b2c5a7c17c3e2c6, type: 2}
+    cost: 200
+  turret3:
+    prefabs: {fileID: 1809053234376014, guid: 23132e88f789d324daa5185b531d1708, type: 2}
+    cost: 300
+  TowerIdentity: 0
 --- !u!1 &1237677536
 GameObject:
   m_ObjectHideFlags: 0
@@ -52429,6 +52467,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1353886318
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55982,6 +56021,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1429395697
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61614,6 +61654,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1597829628
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62085,6 +62126,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1606525908
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62911,7 +62953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1016, y: -81}
+  m_AnchoredPosition: {x: 948, y: -81}
   m_SizeDelta: {x: 75.05, y: 75.05}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1624431390
@@ -63985,7 +64027,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1236357023}
-        m_MethodName: PurcaseTurret3
+        m_MethodName: SelectTurret3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -65354,6 +65396,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1694494978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66685,6 +66728,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1725776893
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66786,6 +66830,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1732911852
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69512,6 +69557,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &1811714091
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72107,6 +72153,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!1 &1896645101
 GameObject:
   m_ObjectHideFlags: 0
@@ -79393,6 +79440,7 @@ MonoBehaviour:
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 0.8, z: 0.4}
   OffsetPositionTurret3: {x: 0, y: 0.8, z: 0.85}
+  turret: {fileID: 0}
 --- !u!23 &2083729204
 MeshRenderer:
   m_ObjectHideFlags: 0
