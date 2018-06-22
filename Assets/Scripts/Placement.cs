@@ -23,7 +23,9 @@ public class Placement : MonoBehaviour {
 	}
 
     public Vector3 GetBuildPosition1() {
-            return transform.position + OffsetPositionTurret1;
+        Debug.Log("Turret1");
+        return transform.position + OffsetPositionTurret1;
+        
     }
 
     public Vector3 GetBuildPosition2()

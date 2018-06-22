@@ -14,14 +14,18 @@ public class Tower : MonoBehaviour {
     public float rotX;
 	public float rotY;
 
-	public string enemyTag = "enemy";
+    [Header("Use Bullets (Default)")]
+    public GameObject bulletPrefabs;
 
-	public bool idle;
+    [Header("Target")]
+    public string enemyTag = "enemy";
+
+	private bool idle;
     //private float speed = 15f;
 
 	public Transform Head;
 
-	public GameObject bulletPrefabs;
+	
 	public Transform firePoint;
 
 	public float turnSpeed = 10f;
@@ -39,19 +43,25 @@ public class Tower : MonoBehaviour {
 			return;
 		}
 
-		Vector3 dir = target.position - transform.position;
-		Quaternion lookRotation = Quaternion.LookRotation (dir);
-		Vector3 rotation = Quaternion.Lerp(Head.rotation, lookRotation, turnSpeed * Time.deltaTime).eulerAngles;
-		Head.rotation = Quaternion.Euler (0,rotation.y,0);
+        LockOnTarget();
 
-		if(fireCountdown <= 0f){
-			Shoot ();
-			fireCountdown = 1f / fireRate;
-		}
+  
+            if (fireCountdown <= 0f)
+            {
+                Shoot();
+                fireCountdown = 1f / fireRate;
+            }
 
-		fireCountdown -= Time.deltaTime;
+            fireCountdown -= Time.deltaTime;
 
 	}
+
+    void LockOnTarget() {
+        Vector3 dir = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = Quaternion.Lerp(Head.rotation, lookRotation, turnSpeed * Time.deltaTime).eulerAngles;
+        Head.rotation = Quaternion.Euler(0, rotation.y, 0);
+    }
 
 	void Shoot(){
 		GameObject bulletGO = (GameObject)Instantiate(bulletPrefabs, firePoint.position, firePoint.rotation);

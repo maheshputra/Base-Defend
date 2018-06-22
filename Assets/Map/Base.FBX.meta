@@ -1,48 +1,35 @@
 fileFormatVersion: 2
-guid: 2c23cf8b5f3b2d144a54287b9e055e8c
+guid: 426475cd38269d8408753c441f5120df
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: Cylinder001
-    100004: Cylinder002
-    100006: Tube001
-    100008: Tube002
-    100010: Tube003
-    100012: Tube004
+    100004: Tube001
+    100006: Tube002
     400000: //RootNode
     400002: Cylinder001
-    400004: Cylinder002
-    400006: Tube001
-    400008: Tube002
-    400010: Tube003
-    400012: Tube004
-    2100000: 01 - Default
+    400004: Tube001
+    400006: Tube002
+    2100000: 07 - Default
     2100002: 02 - Default
     2300000: Cylinder001
-    2300002: Cylinder002
-    2300004: Tube001
-    2300006: Tube002
-    2300008: Tube003
-    2300010: Tube004
+    2300002: Tube001
+    2300004: Tube002
     3300000: Cylinder001
-    3300002: Cylinder002
-    3300004: Tube001
-    3300006: Tube002
-    3300008: Tube003
-    3300010: Tube004
+    3300002: Tube001
+    3300004: Tube002
     4300000: Cylinder001
     4300002: Tube001
     4300004: Tube002
-    4300006: Cylinder002
-    4300008: Tube003
-    4300010: Tube004
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -112,7 +99,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
