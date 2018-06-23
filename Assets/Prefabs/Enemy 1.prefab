@@ -54,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4487289857652678}
   - component: {fileID: 114424135804813362}
+  - component: {fileID: 114729359981283762}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: enemy
@@ -195,13 +196,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1749610196718328}
-  m_LocalRotation: {x: -0.8241905, y: -0, z: -0, w: 0.5663127}
+  m_LocalRotation: {x: 0.6427876, y: 0, z: 0, w: 0.7660445}
   m_LocalPosition: {x: 0.0097920345, y: -0.14399345, z: -0.024000315}
   m_LocalScale: {x: -0.40149006, y: -0.4014902, z: -0.53647125}
   m_Children: []
   m_Father: {fileID: 4378291468595348}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 80, y: 0, z: 0}
 --- !u!4 &4868414816858292
 Transform:
   m_ObjectHideFlags: 1
@@ -355,7 +356,10 @@ MonoBehaviour:
   speed: 5
   starthealth: 100
   health: 100
+  getGold: 50
   partToMove: {fileID: 4378291468595348}
+  impactEffect: {fileID: 1087835928467970, guid: 85501232e0f07894fbb2726572b6b540,
+    type: 2}
   healthbar: {fileID: 114587279146245862}
 --- !u!114 &114568926010435044
 MonoBehaviour:
@@ -411,6 +415,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114729359981283762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1223356096380536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a3d9ad793265e4d933b2ef5f053728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PartRotate: {fileID: 4840644183266510}
 --- !u!114 &114799785106993512
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -67,3 +67,4 @@ D:\Unity Tutorial\Base Defend\Temp\bin\Debug\Facebook.Unity.Settings.dll
 D:\Base-Defend\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\Base-Defend\obj\Debug\Assembly-CSharp.dll
 D:\Base-Defend\obj\Debug\Assembly-CSharp.pdb
+D:\Unity Tutorial\Base Defend\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

@@ -37,8 +37,8 @@ Transform:
   m_GameObject: {fileID: 1567342080508662}
   m_LocalRotation: {x: 0.00000005960465, y: -0.00000007549791, z: -0.0000000754979,
     w: 1}
-  m_LocalPosition: {x: 5.9024935, y: 4.589626, z: -7.1040072}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -5.6711187, y: 3.26, z: -3.492}
+  m_LocalScale: {x: 8, y: 8, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 28a346ffbd1c61d41ab47b0cc2ff5860, type: 2}
+  - {fileID: 2100000, guid: 2d4f49c81a9356046838028346a397dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,6 +96,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51083be1e48f2b74682e4d70e35af524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactEffect: {fileID: 1087835928467970, guid: 85501232e0f07894fbb2726572b6b540,
-    type: 2}
+  damage: 200
   bulletSpeed: 80

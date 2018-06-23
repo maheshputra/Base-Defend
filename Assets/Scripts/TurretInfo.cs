@@ -15,19 +15,19 @@ public class TurretInfo : MonoBehaviour {
 	}
 
     public void SelectTurret1() {
-       // Debug.Log("Turret 1");
+       Debug.Log("Turret 1 Selected");
         buildManager.SelectTurretToBuild(turret1);
     }
 
     public void SelectTurret2()
     {
-       // Debug.Log("Turret 2");
+       Debug.Log("Turret 2 Selected");
         buildManager.SelectTurretToBuild(turret2);
     }
 
     public void SelectTurret3()
     {
-       //    Debug.Log("Turret 3");
+       Debug.Log("Turret 3 Selected");
         buildManager.SelectTurretToBuild(turret3);
     }
 

@@ -5,8 +5,10 @@ public class Enemies : MonoBehaviour {
     public float speed = 10f;
     public float starthealth = 100;
     public float health;
+    public int getGold = 50;
 
     public Transform partToMove;
+    public GameObject impactEffect;
 
     private Transform target;
     private int wavepointIndex = 0;
@@ -41,6 +43,7 @@ public class Enemies : MonoBehaviour {
         if (health <= 0)
         {
             Dies();
+            PlayerStats.Money += getGold;
         }
 
     }
@@ -65,6 +68,8 @@ public class Enemies : MonoBehaviour {
 
     void Dies() {
         Destroy(gameObject);
+        GameObject effectIns = Instantiate(impactEffect, transform.position, transform.rotation);
+        Destroy(effectIns, 2f);
     }
 
 }

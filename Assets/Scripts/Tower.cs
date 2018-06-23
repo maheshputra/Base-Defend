@@ -20,7 +20,7 @@ public class Tower : MonoBehaviour {
     [Header("Target")]
     public string enemyTag = "enemy";
 
-	private bool idle;
+
     //private float speed = 15f;
 
 	public Transform Head;
@@ -32,7 +32,6 @@ public class Tower : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        idle = true;
 		InvokeRepeating ("UpdateTarget",0f,0.5f);
 	}
 	

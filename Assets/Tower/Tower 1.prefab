@@ -281,7 +281,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087678381456650}
   m_LocalRotation: {x: 5.822398e-15, y: -0.00000007549791, z: -0.00000007549791, w: 1}
-  m_LocalPosition: {x: 5.0677357, y: 4.0100965, z: -6.53471}
+  m_LocalPosition: {x: 10.909851, y: 4.0100965, z: 4.525162}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 4337195708876360}
@@ -620,15 +620,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5231faeb0e7614ba41443247b7b650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 7
+  range: 10
   fireRate: 0.5
   fireCountdown: 0
   rotX: 0
   rotY: 0
-  enemyTag: enemy
-  idle: 0
-  Head: {fileID: 4592747042071600}
   bulletPrefabs: {fileID: 1025477069883238, guid: 6546a8844a96b2744a2a22046add8e0e,
     type: 2}
+  enemyTag: enemy
+  Head: {fileID: 4592747042071600}
   firePoint: {fileID: 4614305978804834}
   turnSpeed: 10

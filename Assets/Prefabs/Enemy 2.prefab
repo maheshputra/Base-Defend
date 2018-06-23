@@ -259,9 +259,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  starthealth: 200
+  starthealth: 250
   health: 0
+  getGold: 150
   partToMove: {fileID: 4305695371068796}
+  impactEffect: {fileID: 1087835928467970, guid: 85501232e0f07894fbb2726572b6b540,
+    type: 2}
   healthbar: {fileID: 114409073637281626}
 --- !u!114 &114735411042546404
 MonoBehaviour:
