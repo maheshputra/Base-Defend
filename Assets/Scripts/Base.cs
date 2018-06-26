@@ -16,7 +16,7 @@ public class Base : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-       Cincin1.Rotate( 20 * Time.deltaTime, 0, 0);
-       Cincin2.Rotate( -30* Time.deltaTime, 0, 0);
+		Cincin1.Rotate( 20 * Time.deltaTime, 0, 0,Space.World);
+		Cincin2.Rotate( -30* Time.deltaTime, 0, 0,Space.World);
     }
 }
