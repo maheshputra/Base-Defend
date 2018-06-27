@@ -4445,7 +4445,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 4487289857652678, guid: 5a91fa66f09848c4aa38ac9e23b40474, type: 2}
   enemy2: {fileID: 4563945638927456, guid: 54daeb547fc9a874da5a52675a5de45d, type: 2}
+  boss: {fileID: 4831746128826178, guid: f743b15bc81d7c94ab539768ad6b8b13, type: 2}
   SpawnPoint: {fileID: 87562721}
+  offsetboss: {x: 0, y: 0, z: 0}
   timeBetweenWaves: 5
 --- !u!4 &231670509
 Transform:

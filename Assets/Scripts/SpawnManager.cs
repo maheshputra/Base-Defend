@@ -5,20 +5,25 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour {
 	public Transform enemy;
 	public Transform enemy2;
+    public Transform boss;
+
 
     public static int EnemiesAlive = 0;
 
 	public Transform SpawnPoint;
+    public Vector3 offsetboss;
 
-	public float timeBetweenWaves = 5f;
-	private float timeCountDown = 2f;
+    public float timeBetweenWaves = 5f;
+	private float timeCountDown = 0f;
 
 	private int waveNumber = 0;
-	private int boss = 0;
+	private int bossNumber = 0;
+    private int enemyNumber = 0;
+    private int enemyNumber2 = 1;
 
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         if (EnemiesAlive > 0) {
             return;
         }
@@ -36,18 +41,31 @@ public class SpawnManager : MonoBehaviour {
 		Debug.Log (waveNumber);
 
 		if (waveNumber % 10 == 0) {
-			boss++;
-			for (int i = 0; i < boss; i++) {
-				SpawnEnemy2 ();
-				yield return new WaitForSeconds (1f);
-			}
-		} else {
-
-			for (int i = 0; i < waveNumber; i++) {
-				SpawnEnemy ();
-				yield return new WaitForSeconds (1f);
+			bossNumber++;
+			for (int i = 0; i < bossNumber; i++) {
+			    SpawnBoss ();
+				yield return new WaitForSeconds (10f);
 			}
 		}
+
+        if (waveNumber % 5 == 0)
+        {
+            enemyNumber2++;
+            for (int i = 0; i < enemyNumber2; i++)
+            {
+                SpawnEnemy2();
+                yield return new WaitForSeconds(5f);
+            }
+        }
+        else
+        {
+            enemyNumber++;
+            for (int i = 0; i < enemyNumber; i++)
+            {
+                SpawnEnemy();
+                yield return new WaitForSeconds(3f);
+            }
+        }
 	}
 
 	void SpawnEnemy(){
@@ -57,6 +75,12 @@ public class SpawnManager : MonoBehaviour {
 
 	void SpawnEnemy2(){
 		Instantiate (enemy2, SpawnPoint.position, SpawnPoint.rotation);
+        EnemiesAlive++;
+    }
+
+    void SpawnBoss()
+    {
+        Instantiate(boss, SpawnPoint.position, SpawnPoint.rotation);
         EnemiesAlive++;
     }
 }

@@ -9,6 +9,7 @@ public class Enemies : MonoBehaviour {
 
     public Transform partToMove;
     public GameObject impactEffect;
+    
 
     private Transform target;
     private int wavepointIndex = 0;
@@ -64,6 +65,7 @@ public class Enemies : MonoBehaviour {
     void EndPath() {
         Destroy(gameObject);
         PlayerStats.Lives -= 10;
+        SpawnManager.EnemiesAlive--;
     }
 
     void Dies() {
