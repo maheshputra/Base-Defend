@@ -70,6 +70,7 @@ public class Enemies : MonoBehaviour {
         Destroy(gameObject);
         GameObject effectIns = Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 2f);
+        SpawnManager.EnemiesAlive--;
     }
 
 }

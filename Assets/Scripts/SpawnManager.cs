@@ -6,9 +6,11 @@ public class SpawnManager : MonoBehaviour {
 	public Transform enemy;
 	public Transform enemy2;
 
+    public static int EnemiesAlive = 0;
+
 	public Transform SpawnPoint;
 
-	public float timeBetweenWaves = 10f;
+	public float timeBetweenWaves = 5f;
 	private float timeCountDown = 2f;
 
 	private int waveNumber = 0;
@@ -17,9 +19,14 @@ public class SpawnManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (EnemiesAlive > 0) {
+            return;
+        }
+
 		if (timeCountDown <= 0f) {
 			StartCoroutine (SpawnWave());
 			timeCountDown = timeBetweenWaves;
+            return;
 		}
 		timeCountDown -= Time.deltaTime;
 	}
@@ -45,9 +52,11 @@ public class SpawnManager : MonoBehaviour {
 
 	void SpawnEnemy(){
 		Instantiate (enemy, SpawnPoint.position, SpawnPoint.rotation);
+        EnemiesAlive++;
 	}
 
 	void SpawnEnemy2(){
 		Instantiate (enemy2, SpawnPoint.position, SpawnPoint.rotation);
-	}
+        EnemiesAlive++;
+    }
 }
