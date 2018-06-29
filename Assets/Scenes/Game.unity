@@ -571,10 +571,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &37456597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1548,10 +1562,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &73800588
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2826,6 +2854,132 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 150923835}
   m_Mesh: {fileID: 4300054, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &151718156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 151718161}
+  - component: {fileID: 151718160}
+  - component: {fileID: 151718159}
+  - component: {fileID: 151718158}
+  - component: {fileID: 151718162}
+  - component: {fileID: 151718157}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!225 &151718157
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151718156}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &151718158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151718156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &151718159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151718156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &151718160
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151718156}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &151718161
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151718156}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.050264344, y: 0.031748686, z: 0.6}
+  m_Children:
+  - {fileID: 1957125235}
+  - {fileID: 762738734}
+  m_Father: {fileID: 989395292}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 74.852}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &151718162
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151718156}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 71adbd1706557cf4a9bd01b85ae1b16b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &151798994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,10 +4096,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &210101558
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4426,6 +4594,7 @@ GameObject:
   - component: {fileID: 231670510}
   - component: {fileID: 231670511}
   - component: {fileID: 231670512}
+  - component: {fileID: 231670513}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -4474,9 +4643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a282bd44bd4f5f41b3ee3750a163fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
-  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
-  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  nodeUI: {fileID: 989395291}
 --- !u!114 &231670511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4488,7 +4655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f5d6179aeef10f4b9a32b4dc1b65e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 300
+  startMoney: 3000
   startLives: 100
   startScores: 0
   gold: {fileID: 1468259062}
@@ -4588,6 +4755,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &231670513
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 231670507}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c168cd04345d2c499ed2ff22519ce59, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &234122880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4904,10 +5089,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &243391606
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7953,10 +8152,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &470464347
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9915,6 +10128,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 575222947}
   m_Mesh: {fileID: 4300056, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &578278401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 578278402}
+  - component: {fileID: 578278404}
+  - component: {fileID: 578278403}
+  m_Layer: 0
+  m_Name: Up
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &578278402
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578278401}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1944447531}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.62500197, y: -0.00050354004}
+  m_SizeDelta: {x: 50, y: 41.905}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &578278403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578278401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 5947b0419f3ea1244b00f742ca75f29e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &578278404
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578278401}
 --- !u!1 &580983585
 GameObject:
   m_ObjectHideFlags: 0
@@ -11124,10 +11411,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &683555346
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12544,6 +12845,76 @@ Transform:
   m_Father: {fileID: 1376869015}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &762738733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 762738734}
+  - component: {fileID: 762738736}
+  - component: {fileID: 762738735}
+  m_Layer: 0
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &762738734
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762738733}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1944447531}
+  - {fileID: 1313012041}
+  m_Father: {fileID: 151718161}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0, y: -37.426}
+  m_SizeDelta: {x: 0, y: 74.852}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &762738735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762738733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5294118}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &762738736
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762738733}
 --- !u!1 &767973745
 GameObject:
   m_ObjectHideFlags: 0
@@ -12810,10 +13181,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &783542578
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12912,10 +13297,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &783984013
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13014,10 +13413,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &785942125
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14920,10 +15333,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &863039790
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15096,10 +15523,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &877702110
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17086,10 +17527,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &980310285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17424,6 +17879,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 988053402}
   m_Mesh: {fileID: 4300038, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &989395290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 989395292}
+  - component: {fileID: 989395291}
+  m_Layer: 0
+  m_Name: NodeUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &989395291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 989395290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b15c26eb4ed74941aefb4f4aebfff36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 151718156}
+  UpgradeCost: {fileID: 578278403}
+  SellCost: {fileID: 1514176940}
+--- !u!4 &989395292
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 989395290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.909851, y: 7.2920966, z: 6.08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 151718161}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &994906495
 GameObject:
   m_ObjectHideFlags: 0
@@ -18400,10 +18899,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1069458991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20192,10 +20705,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1194022718
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20590,10 +21117,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1220399103
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20911,12 +21452,24 @@ MonoBehaviour:
   turret1:
     prefabs: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
     cost: 100
+    upgradedPrefabs: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863,
+      type: 2}
+    upgradeCost: 150
+    sellCost: 50
   turret2:
     prefabs: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
     cost: 250
+    upgradedPrefabs: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608,
+      type: 2}
+    upgradeCost: 400
+    sellCost: 125
   turret3:
     prefabs: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
     cost: 450
+    upgradedPrefabs: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a,
+      type: 2}
+    upgradeCost: 700
+    sellCost: 225
   TowerIdentity: 0
 --- !u!1 &1240006008
 GameObject:
@@ -22250,6 +22803,117 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1311063960}
   m_Mesh: {fileID: 4300056, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &1313012040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1313012041}
+  - component: {fileID: 1313012044}
+  - component: {fileID: 1313012043}
+  - component: {fileID: 1313012042}
+  m_Layer: 0
+  m_Name: Sell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1313012041
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313012040}
+  m_LocalRotation: {x: -0, y: -0, z: 4.395789e-22, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.91125566, y: 0.8268264, z: 0.9999998}
+  m_Children:
+  - {fileID: 1514176939}
+  m_Father: {fileID: 762738734}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 24.32, y: 0.24}
+  m_SizeDelta: {x: 51.35, y: 83.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1313012042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313012040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1313012043}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1313012043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313012040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300002, guid: f6449df527e8aae4a9510c501ab040b0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1313012044
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313012040}
 --- !u!1 &1328961284
 GameObject:
   m_ObjectHideFlags: 0
@@ -22607,10 +23271,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1353886318
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23832,10 +24510,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1429395697
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25533,6 +26225,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1514152686}
   m_Mesh: {fileID: 4300062, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &1514176938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1514176939}
+  - component: {fileID: 1514176941}
+  - component: {fileID: 1514176940}
+  m_Layer: 0
+  m_Name: sell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1514176939
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1514176938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.0000002e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1313012041}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.67500365, y: 0}
+  m_SizeDelta: {x: 50.000004, y: 41.75}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1514176940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1514176938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 5947b0419f3ea1244b00f742ca75f29e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1514176941
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1514176938}
 --- !u!1 &1515515236
 GameObject:
   m_ObjectHideFlags: 0
@@ -26943,10 +27709,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1597829628
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27267,10 +28047,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1606525908
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28451,10 +29245,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1694494978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29099,10 +29907,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1725776893
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29201,10 +30023,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1732911852
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30161,10 +30997,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &1811714091
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30598,10 +31448,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!1 &1898559194
 GameObject:
   m_ObjectHideFlags: 0
@@ -31362,6 +32226,128 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1941750733}
   m_Mesh: {fileID: 4300050, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &1944447530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1944447531}
+  - component: {fileID: 1944447534}
+  - component: {fileID: 1944447533}
+  - component: {fileID: 1944447532}
+  m_Layer: 0
+  m_Name: Upgrade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1944447531
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944447530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.91133446, y: 0.82679236, z: 1}
+  m_Children:
+  - {fileID: 578278402}
+  m_Father: {fileID: 762738734}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -24.65, y: 0.33}
+  m_SizeDelta: {x: 51.25, y: 83.81}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1944447532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944447530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1944447533}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 989395291}
+        m_MethodName: Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1944447533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944447530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: f6449df527e8aae4a9510c501ab040b0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1944447534
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944447530}
 --- !u!1 &1947364990
 GameObject:
   m_ObjectHideFlags: 0
@@ -31656,6 +32642,74 @@ Transform:
   m_Father: {fileID: 264198086}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1957125234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1957125235}
+  - component: {fileID: 1957125237}
+  - component: {fileID: 1957125236}
+  m_Layer: 0
+  m_Name: Arrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1957125235
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1957125234}
+  m_LocalRotation: {x: 4.2351647e-22, y: 7.1054274e-15, z: 4.3957884e-22, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 151718161}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0, y: -56.264004}
+  m_SizeDelta: {x: 100, y: 86.49}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1957125236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1957125234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7216981, g: 0.883608, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1957125237
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1957125234}
 --- !u!1 &1958600539
 GameObject:
   m_ObjectHideFlags: 0
@@ -33898,10 +34952,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
+  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
   OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
   OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
   OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
+  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
+  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
+  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
+  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
+  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
+  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
   turret: {fileID: 0}
+  TurretBlueprint:
+    prefabs: {fileID: 0}
+    cost: 0
+    upgradedPrefabs: {fileID: 0}
+    upgradeCost: 0
+    sellCost: 0
+  isUpgraded: 0
 --- !u!23 &2083729204
 MeshRenderer:
   m_ObjectHideFlags: 0
