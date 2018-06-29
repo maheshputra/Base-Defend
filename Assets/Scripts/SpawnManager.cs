@@ -20,7 +20,7 @@ public class SpawnManager : MonoBehaviour {
 	private int waveNumber = 0;
 	private int bossNumber = 0;
     private int enemyNumber = 0;
-    private int enemyNumber2 = 1;
+    private int enemyNumber2 = 0;
 
 
     // Update is called once per frame
@@ -62,7 +62,7 @@ public class SpawnManager : MonoBehaviour {
 			}
 		}
 
-        if (waveNumber % 5 == 0)
+        if (waveNumber % 3 == 0)
         {
             enemyNumber2++;
             for (int i = 0; i < enemyNumber2; i++)
