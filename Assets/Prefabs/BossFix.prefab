@@ -229,7 +229,8 @@ MonoBehaviour:
   health: 0
   getGold: 0
   PartRotate: {fileID: 4462092352761668}
-  impactEffect: {fileID: 0}
+  impactEffect: {fileID: 1087835928467970, guid: 85501232e0f07894fbb2726572b6b540,
+    type: 2}
   healthbar: {fileID: 114146021304757944}
 --- !u!114 &114515718356777542
 MonoBehaviour:

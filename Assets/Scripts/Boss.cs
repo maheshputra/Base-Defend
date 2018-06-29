@@ -47,6 +47,7 @@ public class Boss : MonoBehaviour {
             Dies();
             PlayerStats.Money += getGold;
         }
+        Debug.Log(health);
 
     }
 

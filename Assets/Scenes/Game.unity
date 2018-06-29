@@ -4945,7 +4945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 300
-  startLives: 10
+  startLives: 100
   startScores: 0
   GameOverUI: {fileID: 136008748}
   gold: {fileID: 1468259062}
@@ -25296,7 +25296,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -65,7 +65,7 @@ public class Enemies : MonoBehaviour {
 
     void EndPath() {
         Destroy(gameObject);
-        PlayerStats.Lives -= 10;
+        PlayerStats.Lives -= damageEnemy;
         SpawnManager.EnemiesAlive--;
     }
 
