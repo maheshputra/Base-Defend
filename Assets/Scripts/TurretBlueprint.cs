@@ -11,5 +11,13 @@ public class TurretBlueprint {
     public GameObject upgradedPrefabs;
     public int upgradeCost;
 
-    public int sellCost;
+    public int sellAmount() {
+        return cost / 2;
+    }
+
+    public int sellAmountUpgraded() {
+        return upgradeCost / 2;
+    }
+
+    
 }

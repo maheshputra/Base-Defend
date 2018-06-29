@@ -5,6 +5,9 @@ public class BuildManager : MonoBehaviour {
 
     private Placement selectedNode;
     public NodeUI nodeUI;
+    public GameObject buildEffect;
+    public GameObject upgradeEffect;
+    public GameObject sellEffect;
 
     void Awake(){
 		if(instance != null){

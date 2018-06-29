@@ -16,6 +16,7 @@ public class Tower : MonoBehaviour {
 
     [Header("Use Bullets (Default)")]
     public GameObject bulletPrefabs;
+    public AudioSource sfx;
 
     [Header("Target")]
     public string enemyTag = "enemy";
@@ -63,6 +64,7 @@ public class Tower : MonoBehaviour {
     }
 
 	void Shoot(){
+        sfx.Play();
 		GameObject bulletGO = (GameObject)Instantiate(bulletPrefabs, firePoint.position, firePoint.rotation);
 		Bullet bullet = bulletGO.GetComponent<Bullet> ();
 

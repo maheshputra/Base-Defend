@@ -13,8 +13,9 @@ public class SpawnManager : MonoBehaviour {
 	public Transform SpawnPoint;
     public Vector3 offsetboss;
 
-    public float timeBetweenWaves = 5f;
-	private float timeCountDown = 0f;
+    public float timeBetweenWaves = 3f;
+	private float timeCountDown = 3f;
+    public float startTimeGame = 10f;
 
 	private int waveNumber = 0;
 	private int bossNumber = 0;
@@ -24,8 +25,21 @@ public class SpawnManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (EnemiesAlive > 0) {
-            return;
+        if (waveNumber < 10)
+        {
+            if (timeCountDown <= 0f)
+            {
+                StartCoroutine(SpawnWave());
+                timeCountDown = startTimeGame;
+                return;
+            }
+
+        }
+        else {
+            if (EnemiesAlive > 0)
+            {
+                return;
+            }
         }
 
 		if (timeCountDown <= 0f) {
@@ -63,7 +77,7 @@ public class SpawnManager : MonoBehaviour {
             for (int i = 0; i < enemyNumber; i++)
             {
                 SpawnEnemy();
-                yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(2f);
             }
         }
 	}

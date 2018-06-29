@@ -87,6 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4563945638927456}
   - component: {fileID: 114432137513314438}
+  - component: {fileID: 65095862971009118}
   m_Layer: 0
   m_Name: Enemy 2
   m_TagString: enemy
@@ -204,6 +205,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1435310327158858}
   m_Mesh: {fileID: 4300002, guid: 99d9e31ee6f102d42955d99bb785ce50, type: 3}
+--- !u!65 &65095862971009118
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1751611735339952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7972958, y: 1, z: 2.1431572}
+  m_Center: {x: 0.054294564, y: 0, z: 0.08201201}
 --- !u!114 &114184960715365816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -258,10 +271,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5acac98e08336e40bb5477da48d511e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 5
   starthealth: 200
   health: 0
   getGold: 50
+  damageEnemy: 20
   partToMove: {fileID: 4305695371068796}
   impactEffect: {fileID: 1087835928467970, guid: 85501232e0f07894fbb2726572b6b540,
     type: 2}

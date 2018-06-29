@@ -97,4 +97,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 400
+  explosionRadius: 7
   bulletSpeed: 80

@@ -29,7 +29,6 @@ public class Placement : MonoBehaviour {
 	private Color startColor;
 
     BuildManager buildManager;
-    
 
     // Use this for initialization
     void Start () {
@@ -70,7 +69,8 @@ public class Placement : MonoBehaviour {
 		if (turret != null) {
 			Debug.Log ("Can't build turret here");
             buildManager.SelectNode(this);
-			return;
+            
+            return;
 		}
 
         BuildTurret(buildManager.GetTurretToBuild());
@@ -103,6 +103,9 @@ public class Placement : MonoBehaviour {
             GameObject _turret = (GameObject)Instantiate(blueprint.prefabs, GetBuildPosition3(), Quaternion.identity);
             turret = _turret;
         }
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect,GetBuildPosition1(),Quaternion.identity);
+        Destroy(effect,5f);
 
         TurretBlueprint = blueprint;
 
@@ -138,9 +141,34 @@ public class Placement : MonoBehaviour {
             turret = _turret;
         }
 
+        GameObject effect = (GameObject)Instantiate(buildManager.upgradeEffect, GetBuildPosition1(), Quaternion.identity);
+        Destroy(effect, 5f);
+
         isUpgraded = true;
 
         Debug.Log(PlayerStats.Money);
+    }
+
+    public void SellTurret() {
+        PlayerStats.Money += TurretBlueprint.sellAmount();
+
+        Destroy(turret);
+
+        GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition1(), Quaternion.identity);
+        Destroy(effect, 5f);
+
+        TurretBlueprint = null;
+    }
+
+    public void SellTurretUpgraded()
+    {
+        PlayerStats.Money += TurretBlueprint.sellAmountUpgraded();
+
+        Destroy(turret);
+        GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition1(), Quaternion.identity);
+        Destroy(effect, 5f);
+
+        TurretBlueprint = null;
     }
 
     void OnMouseEnter(){

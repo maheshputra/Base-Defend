@@ -6,6 +6,7 @@ public class Enemies : MonoBehaviour {
     public float starthealth = 100;
     public float health;
     public int getGold = 50;
+    public int damageEnemy = 10;
 
     public Transform partToMove;
     public GameObject impactEffect;

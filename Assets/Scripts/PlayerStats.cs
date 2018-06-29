@@ -23,7 +23,7 @@ public class PlayerStats : MonoBehaviour {
     void Update()
     {
         hp.text = "" + Lives;
-        gold.text = "" + Money;
+        gold.text = "$" + Money;
 
         if (Lives <= 0) {
             SceneManager.LoadScene("GameOver");

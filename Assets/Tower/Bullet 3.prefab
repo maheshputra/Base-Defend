@@ -37,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 1567342080508662}
   m_LocalRotation: {x: 0.00000005960465, y: -0.00000007549791, z: -0.0000000754979,
     w: 1}
-  m_LocalPosition: {x: -5.6711187, y: 3.26, z: -3.492}
+  m_LocalPosition: {x: 5.809951, y: 1.7190446, z: 7.5198474}
   m_LocalScale: {x: 8, y: 8, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,4 +97,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 200
+  explosionRadius: 5
   bulletSpeed: 80
