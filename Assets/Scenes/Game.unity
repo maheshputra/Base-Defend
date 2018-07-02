@@ -675,11 +675,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 37456594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.82, y: 0.9350001, z: -3.7019997}
+  m_LocalPosition: {x: -1.12, y: 0.9350001, z: -3.7019997}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &37456596
 MonoBehaviour:
@@ -703,6 +703,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -1665,11 +1668,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 73800585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.47, y: 0.9350001, z: 2.2}
+  m_LocalPosition: {x: 3.47, y: 0.9350001, z: 1.98}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &73800587
 MonoBehaviour:
@@ -1693,6 +1696,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -3064,6 +3070,130 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 142531990}
   m_Mesh: {fileID: 4300038, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &148245179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 148245180}
+  - component: {fileID: 148245181}
+  m_Layer: 0
+  m_Name: Upgrade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &148245180
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148245179}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1209571209}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &148245181
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148245179}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c4ad6de20b3ee4b78b723909d52229b0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &150923835
 GameObject:
   m_ObjectHideFlags: 0
@@ -4310,7 +4440,6 @@ Transform:
   m_Children:
   - {fileID: 1889533345}
   - {fileID: 1811714089}
-  - {fileID: 785942123}
   - {fileID: 783984011}
   - {fileID: 1694494976}
   - {fileID: 1353886316}
@@ -4362,11 +4491,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 210101555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.25, y: 0.9350001, z: 0.56000006}
+  m_LocalPosition: {x: 4.25, y: 0.9350001, z: 0.76}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &210101557
 MonoBehaviour:
@@ -4390,6 +4519,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -5281,11 +5413,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 243391603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5300001, y: 0.9350001, z: -1.69}
+  m_LocalPosition: {x: 1.71, y: 0.9350001, z: -1.89}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &243391605
 MonoBehaviour:
@@ -5309,6 +5441,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -6955,6 +7090,130 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 356341500}
   m_Mesh: {fileID: 4300060, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &365872015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 365872016}
+  - component: {fileID: 365872017}
+  m_Layer: 0
+  m_Name: Buy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &365872016
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365872015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1209571209}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &365872017
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365872015}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e9f6db2c560b545a3a45b09f94165277, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &376327386
 GameObject:
   m_ObjectHideFlags: 0
@@ -8445,11 +8704,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 470464344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.77, y: 0.9350001, z: 4.7200003}
+  m_LocalPosition: {x: -2.97, y: 0.9350001, z: 4.59}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &470464346
 MonoBehaviour:
@@ -8473,6 +8732,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -10432,6 +10694,130 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 564700900}
   m_Mesh: {fileID: 4300040, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &571411469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 571411470}
+  - component: {fileID: 571411471}
+  m_Layer: 0
+  m_Name: Sell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &571411470
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571411469}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1209571209}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &571411471
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571411469}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4d8a9d2a4233e4398807206a01cbb9e4, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &575222947
 GameObject:
   m_ObjectHideFlags: 0
@@ -11851,11 +12237,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 683555343}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.43, y: 0.9350001, z: -2.79}
+  m_LocalPosition: {x: 5.59, y: 0.9350001, z: -2.79}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &683555345
 MonoBehaviour:
@@ -11879,6 +12265,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -13620,11 +14009,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 783542575}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.46, y: 0.9350001, z: 0.83000004}
+  m_LocalPosition: {x: -5.61, y: 0.9350001, z: 0.71}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &783542577
 MonoBehaviour:
@@ -13648,6 +14037,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -13735,11 +14127,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 783984010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.85, y: 0.9350001, z: -4.5}
+  m_LocalPosition: {x: -4.37, y: 0.9350001, z: -4.29}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &783984012
 MonoBehaviour:
@@ -13763,6 +14155,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -13823,121 +14218,6 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 783984010}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &785942122
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 785942123}
-  - component: {fileID: 785942127}
-  - component: {fileID: 785942126}
-  - component: {fileID: 785942125}
-  - component: {fileID: 785942124}
-  m_Layer: 0
-  m_Name: Place (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &785942123
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 785942122}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.712, y: 0.9350001, z: -3.702}
-  m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
-  m_Children: []
-  m_Father: {fileID: 200442061}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &785942124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 785942122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a8ce53a98ba30247bb309c5899ac8c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverColor: {r: 0.6132076, g: 0.60019135, b: 0.5698202, a: 1}
-  OffsetNodeUI: {x: 0, y: 4.6, z: 1.8}
-  OffsetPositionTurret1: {x: 0, y: 0.8, z: 0.47}
-  OffsetPositionTurret2: {x: 0, y: 1, z: 0.5}
-  OffsetPositionTurret3: {x: 0, y: 1, z: 0.87}
-  Turret1: {fileID: 1087678381456650, guid: 68ba19ab97b504b488b97ed8aaa1c588, type: 2}
-  Turret2: {fileID: 1398035515447642, guid: 556e860c67bd507468f14255cead17f2, type: 2}
-  Turret3: {fileID: 1655174024522712, guid: 5e29d62d95493154ca33fe903876adae, type: 2}
-  Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
-  Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
-  Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
-  turret: {fileID: 0}
-  TurretBlueprint:
-    prefabs: {fileID: 0}
-    cost: 0
-    upgradedPrefabs: {fileID: 0}
-    upgradeCost: 0
-  isUpgraded: 0
---- !u!23 &785942125
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 785942122}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 9493f451c6dd8794fb64bf3b0b694b5b, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &785942126
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 785942122}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &785942127
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 785942122}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &787007478
 GameObject:
@@ -15890,11 +16170,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 863039787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0750003, y: 0.9350001, z: -3.867}
+  m_LocalPosition: {x: 2.97, y: 0.9350001, z: -3.867}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &863039789
 MonoBehaviour:
@@ -15918,6 +16198,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -16114,11 +16397,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 877702107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.44, y: 0.9350001, z: -0.59}
+  m_LocalPosition: {x: -3.63, y: 0.9350001, z: -0.44}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &877702109
 MonoBehaviour:
@@ -16142,6 +16425,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -18185,11 +18471,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 980310282}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.69, y: 0.9350001, z: 4.72}
+  m_LocalPosition: {x: -4.49, y: 0.9350001, z: 4.61}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &980310284
 MonoBehaviour:
@@ -18213,6 +18499,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -19557,11 +19846,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1069458988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.075, y: 0.9350001, z: -1.69}
+  m_LocalPosition: {x: 3.02, y: 0.9350001, z: -1.9}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1069458990
 MonoBehaviour:
@@ -19585,6 +19874,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -21362,11 +21654,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1194022715}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.43, y: 0.9350001, z: -0.98}
+  m_LocalPosition: {x: 5.62, y: 0.9350001, z: -0.98}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1194022717
 MonoBehaviour:
@@ -21390,6 +21682,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -21599,6 +21894,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1208121055}
   m_Mesh: {fileID: 4300048, guid: 674a3c6cde9f9fd41aa023d56aba3b82, type: 3}
+--- !u!1 &1209571208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1209571209}
+  m_Layer: 0
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1209571209
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209571208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 571411470}
+  - {fileID: 365872016}
+  - {fileID: 148245180}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1216746125
 GameObject:
   m_ObjectHideFlags: 0
@@ -21773,11 +22099,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1220399100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.44, y: 0.9350001, z: 3.28}
+  m_LocalPosition: {x: 0.21, y: 0.9350001, z: 3.18}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1220399102
 MonoBehaviour:
@@ -21801,6 +22127,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -23991,7 +24320,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4085607226133370, guid: be251b945b1c9e24896635300bbea18c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.1410003
+      value: -2.44
       objectReference: {fileID: 0}
     - target: {fileID: 4085607226133370, guid: be251b945b1c9e24896635300bbea18c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -23999,7 +24328,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4085607226133370, guid: be251b945b1c9e24896635300bbea18c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -2.9280002
+      value: -3.16
       objectReference: {fileID: 0}
     - target: {fileID: 4085607226133370, guid: be251b945b1c9e24896635300bbea18c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -24055,11 +24384,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1353886315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.53, y: 0.9350001, z: -3.84}
+  m_LocalPosition: {x: 1.65, y: 0.9350001, z: -3.84}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1353886317
 MonoBehaviour:
@@ -24083,6 +24412,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -25417,11 +25749,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1429395694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.51, y: 0.9350001, z: 0.56}
+  m_LocalPosition: {x: 0.51, y: 0.9350001, z: 0.78}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1429395696
 MonoBehaviour:
@@ -25445,6 +25777,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -28737,11 +29072,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1597829625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.98, y: 0.9350001, z: 4.7200007}
+  m_LocalPosition: {x: -1.2, y: 0.9350001, z: 4.57}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1597829627
 MonoBehaviour:
@@ -28765,6 +29100,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -29074,11 +29412,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1606525905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.69, y: 0.9350001, z: 3.21}
+  m_LocalPosition: {x: -4.45, y: 0.9350001, z: 3.36}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1606525907
 MonoBehaviour:
@@ -29102,6 +29440,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -30271,11 +30612,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1694494975}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.092, y: 0.9350001, z: -4.5}
+  m_LocalPosition: {x: -2.45, y: 0.9350001, z: -4.3}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1694494977
 MonoBehaviour:
@@ -30299,6 +30640,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -30991,11 +31335,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1725776890}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.44, y: 0.9350001, z: 0.83}
+  m_LocalPosition: {x: -3.59, y: 0.9350001, z: 0.74}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1725776892
 MonoBehaviour:
@@ -31019,6 +31363,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -31106,11 +31453,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1732911849}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.4600005, y: 0.9350001, z: -0.6}
+  m_LocalPosition: {x: -5.61, y: 0.9350001, z: -0.5}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1732911851
 MonoBehaviour:
@@ -31134,6 +31481,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -32079,7 +32429,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1811714088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.886, y: 0.9350001, z: -2.9280002}
+  m_LocalPosition: {x: -4.37, y: 0.9350001, z: -3.11}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
@@ -32107,6 +32457,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -32802,6 +33155,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}
@@ -36278,11 +36634,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2083729201}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.429, y: 0.9350001, z: 4.73}
+  m_LocalPosition: {x: 0.23, y: 0.9350001, z: 4.57}
   m_LocalScale: {x: 0.6324267, y: 0.11277667, z: 0.56162}
   m_Children: []
   m_Father: {fileID: 200442061}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2083729203
 MonoBehaviour:
@@ -36306,6 +36662,9 @@ MonoBehaviour:
   Turret1Up: {fileID: 1087678381456650, guid: d25e358c7d183d349a910e1720af3863, type: 2}
   Turret2Up: {fileID: 1398035515447642, guid: b791a3b73dbc1184599ee10a9777c608, type: 2}
   Turret3Up: {fileID: 1655174024522712, guid: db48abd62effe114ba3932ee13db4b0a, type: 2}
+  SellSfx: {fileID: 571411471}
+  BuySfx: {fileID: 365872017}
+  UpgradeSfx: {fileID: 148245181}
   turret: {fileID: 0}
   TurretBlueprint:
     prefabs: {fileID: 0}

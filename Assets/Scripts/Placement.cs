@@ -18,6 +18,11 @@ public class Placement : MonoBehaviour {
     public GameObject Turret3Up;
 
 
+    [Header("SFX")]
+    public AudioSource SellSfx;
+    public AudioSource BuySfx;
+    public AudioSource UpgradeSfx;
+
     [HideInInspector]
     public GameObject turret;
     [HideInInspector]
@@ -29,6 +34,7 @@ public class Placement : MonoBehaviour {
 	private Color startColor;
 
     BuildManager buildManager;
+
 
     // Use this for initialization
     void Start () {
@@ -103,9 +109,10 @@ public class Placement : MonoBehaviour {
             GameObject _turret = (GameObject)Instantiate(blueprint.prefabs, GetBuildPosition3(), Quaternion.identity);
             turret = _turret;
         }
-
+        BuySfx.Play();
         GameObject effect = (GameObject)Instantiate(buildManager.buildEffect,GetBuildPosition1(),Quaternion.identity);
         Destroy(effect,5f);
+        
 
         TurretBlueprint = blueprint;
 
@@ -140,9 +147,10 @@ public class Placement : MonoBehaviour {
             GameObject _turret = (GameObject)Instantiate(TurretBlueprint.upgradedPrefabs, GetBuildPosition3(), Quaternion.identity);
             turret = _turret;
         }
-
+        UpgradeSfx.Play();
         GameObject effect = (GameObject)Instantiate(buildManager.upgradeEffect, GetBuildPosition1(), Quaternion.identity);
         Destroy(effect, 5f);
+        
 
         isUpgraded = true;
 
@@ -151,11 +159,12 @@ public class Placement : MonoBehaviour {
 
     public void SellTurret() {
         PlayerStats.Money += TurretBlueprint.sellAmount();
-
+        SellSfx.Play();
         Destroy(turret);
-
+        
         GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition1(), Quaternion.identity);
         Destroy(effect, 5f);
+    
 
         TurretBlueprint = null;
     }
@@ -165,9 +174,12 @@ public class Placement : MonoBehaviour {
         PlayerStats.Money += TurretBlueprint.sellAmountUpgraded();
 
         Destroy(turret);
+        SellSfx.Play();
         GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition1(), Quaternion.identity);
         Destroy(effect, 5f);
 
+
+        isUpgraded = false;
         TurretBlueprint = null;
     }
 

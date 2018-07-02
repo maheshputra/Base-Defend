@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 4378291468595348}
   m_Layer: 0
   m_Name: PartMove
-  m_TagString: enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,8 +353,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.3079998, y: 1.3409998, z: 1.2466079}
+  m_Center: {x: 0.055000003, y: 0.17050019, z: 0.029169964}
 --- !u!114 &114424135804813362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -368,7 +368,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   starthealth: 100
-  health: 0
   getGold: 20
   damageEnemy: 10
   partToMove: {fileID: 4378291468595348}

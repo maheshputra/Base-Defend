@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33289011376286502}
   - component: {fileID: 23578783889794564}
   - component: {fileID: 114943264331261238}
+  - component: {fileID: 65729169665398190}
   m_Layer: 0
   m_Name: Bullet 3
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1567342080508662}
   m_LocalRotation: {x: 0.00000005960465, y: -0.00000007549791, z: -0.0000000754979,
     w: 1}
-  m_LocalPosition: {x: 5.809951, y: 1.7190446, z: 7.5198474}
+  m_LocalPosition: {x: 1.4820035, y: 1.7190467, z: -9.938084}
   m_LocalScale: {x: 8, y: 8, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,6 +86,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1567342080508662}
   m_Mesh: {fileID: 4300688, guid: c47310bb7b83e4445b463eb2a42a6a9d, type: 3}
+--- !u!65 &65729169665398190
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1567342080508662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.026725106, y: 0.026319094, z: 0.36397237}
+  m_Center: {x: -0.000000059604645, y: 6.465448e-16, z: 0.18198594}
 --- !u!114 &114943264331261238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,6 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51083be1e48f2b74682e4d70e35af524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 200
+  damage: 75
   explosionRadius: 5
-  bulletSpeed: 80
+  bulletSpeed: 20

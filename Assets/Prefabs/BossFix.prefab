@@ -57,7 +57,6 @@ GameObject:
   - component: {fileID: 33952371243947938}
   - component: {fileID: 23051543113689032}
   - component: {fileID: 95998062638386822}
-  - component: {fileID: 135296597401390408}
   m_Layer: 0
   m_Name: Planet Boss Fix
   m_TagString: Untagged
@@ -74,6 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4700572649214722}
   - component: {fileID: 114208229339852676}
+  - component: {fileID: 135359096717573958}
   m_Layer: 0
   m_Name: BossFix
   m_TagString: enemy
@@ -296,18 +296,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!135 &135296597401390408
+--- !u!135 &135359096717573958
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1481269305921198}
+  m_GameObject: {fileID: 1918057911014498}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 7.719636
-  m_Center: {x: 0.018428085, y: -0.074233785, z: 0.0000019073486}
+  m_Radius: 7.719341
+  m_Center: {x: 0, y: 7.219341, z: 0}
 --- !u!222 &222320176438807860
 CanvasRenderer:
   m_ObjectHideFlags: 1

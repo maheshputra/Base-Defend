@@ -25,22 +25,22 @@ public class SpawnManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (waveNumber < 10)
-        {
-            if (timeCountDown <= 0f)
-            {
-                StartCoroutine(SpawnWave());
-                timeCountDown = startTimeGame;
-                return;
-            }
+        //if (waveNumber < 10)
+        //{
+        //    if (timeCountDown <= 0f)
+        //    {
+        //        StartCoroutine(SpawnWave());
+        //        timeCountDown = startTimeGame;
+        //        return;
+        //    }
 
-        }
-        else {
+        //}
+        //else {
             if (EnemiesAlive > 0)
             {
                 return;
             }
-        }
+        //}
 
 		if (timeCountDown <= 0f) {
 			StartCoroutine (SpawnWave());
@@ -54,13 +54,19 @@ public class SpawnManager : MonoBehaviour {
 		waveNumber++;
 		Debug.Log (waveNumber);
 
+
 		if (waveNumber % 10 == 0) {
 			bossNumber++;
-			for (int i = 0; i < bossNumber; i++) {
+            for (int i = 0; i < bossNumber; i++) {
 			    SpawnBoss ();
 				yield return new WaitForSeconds (10f);
 			}
-		}
+            Boss.health += 500;
+        }
+
+        if (waveNumber % 5 == 0) {
+            Enemies.health += 50;
+        }
 
         if (waveNumber % 3 == 0)
         {

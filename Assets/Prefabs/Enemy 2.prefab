@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4305695371068796}
   m_Layer: 0
   m_Name: PartToMove
-  m_TagString: enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4563945638927456}
   - component: {fileID: 114432137513314438}
-  - component: {fileID: 65095862971009118}
+  - component: {fileID: 65406896654173812}
   m_Layer: 0
   m_Name: Enemy 2
   m_TagString: enemy
@@ -205,7 +205,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1435310327158858}
   m_Mesh: {fileID: 4300002, guid: 99d9e31ee6f102d42955d99bb785ce50, type: 3}
---- !u!65 &65095862971009118
+--- !u!65 &65406896654173812
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -215,8 +215,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.7972958, y: 1, z: 2.1431572}
-  m_Center: {x: 0.054294564, y: 0, z: 0.08201201}
+  m_Size: {x: 6.6192913, y: 3.9798107, z: 3.9836884}
+  m_Center: {x: -0.02486378, y: 1.4899051, z: 0.9945631}
 --- !u!114 &114184960715365816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -273,7 +273,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   starthealth: 200
-  health: 0
   getGold: 50
   damageEnemy: 20
   partToMove: {fileID: 4305695371068796}

@@ -1,10 +1,9 @@
 WindowsStandalone
 PlayerPath?
-D:/Base Defend v2.2/Base Defend v2.2.exe
+D:/Base Defend v2.3/Base Defend v2.3.exe
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/Game.unity
-Assets/Scenes/GameOver.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -129,8 +128,8 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MainMenu
 6ce33ac8eb5782117e8acd0e64b33a0a Assembly-CSharp.dll:Polybrush.z_AdditionalVertexStreams
-1319e11549ff9e585505a8d29e59f245 Assembly-CSharp.dll:.Boss
-a72e97b4b16ac447557f894af9673e1a Assembly-CSharp.dll:.Enemies
+c14aa2ed314a206e7e913d39c17490a0 Assembly-CSharp.dll:.Boss
+8d106db1d6d423c00ab4a74e1e7c22c7 Assembly-CSharp.dll:.Enemies
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
 ccf8a78d3743999373c6b66f15e6662e Assembly-CSharp.dll:.PlayerStats
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -147,7 +146,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-0ca2c27a3f99e7fb4a5a8b437753290b Assembly-CSharp.dll:.Placement
+7898b244de4190bde27a2cf3d3f0d034 Assembly-CSharp.dll:.Placement
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 f02726adeff0a3ec5905565234b372da UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender

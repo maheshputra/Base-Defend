@@ -34,7 +34,7 @@ public class TurretStat : MonoBehaviour {
     {
         TurName.text = "Turret 1 Upgraded";
         TurCost.text = "";
-        TurDmg.text = "700";
+        TurDmg.text = "500";
         TurSpd.text = "80";
         TurRange.text = "1000";
     }
@@ -61,7 +61,7 @@ public class TurretStat : MonoBehaviour {
     {
         TurName.text = "Turret 3";
         TurCost.text = "$450";
-        TurDmg.text = "2000";
+        TurDmg.text = "750";
         TurSpd.text = "20";
         TurRange.text = "1500";
     }
@@ -70,7 +70,7 @@ public class TurretStat : MonoBehaviour {
     {
         TurName.text = "Turret 3 Upgraded";
         TurCost.text = "";
-        TurDmg.text = "4000";
+        TurDmg.text = "1500";
         TurSpd.text = "40";
         TurRange.text = "2000";
     }

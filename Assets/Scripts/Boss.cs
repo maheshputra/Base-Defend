@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class Boss : MonoBehaviour {
     public float speed = 10f;
     public float starthealth = 100;
-    public float health;
+    public static float health;
     public int getGold = 50;
 
 
