@@ -21,7 +21,7 @@ public class Tower : MonoBehaviour {
     [Header("Target")]
     public string enemyTag = "enemy";
 
-
+	public Animator Anim;
     //private float speed = 15f;
 
 	public Transform Head;
@@ -64,6 +64,7 @@ public class Tower : MonoBehaviour {
     }
 
 	void Shoot(){
+		Anim.SetTrigger("shoot");
         sfx.Play();
 		GameObject bulletGO = (GameObject)Instantiate(bulletPrefabs, firePoint.position, firePoint.rotation);
 		Bullet bullet = bulletGO.GetComponent<Bullet> ();
